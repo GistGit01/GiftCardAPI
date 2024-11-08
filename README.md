@@ -3,7 +3,7 @@
 
 Base URL:
 
-* <a href="https://www.realglpay.com">`https://realglpay.com`</a>
+* <a href="https://www.realglpay.com">`https://www.realglpay.com`</a>
 
 # 1. 请求约束
 
