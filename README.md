@@ -140,7 +140,7 @@ let sign = CryptoJS.SHA256(originString).toString();
 |» orderId|body|string| 否 | 订单ID||
 |» isContainFailed|body|boolean| 否 | 是否包含失败订单|若该项为true，则包含状态为`NotPaid`和`PayFailed`状态的订单|
 |» pageSize|body|integer| 是 | 页大小||
-|» pageNumber|body|integer| 是 | 页码||
+|» pageIndex|body|integer| 是 | 页码||
 
 > Body 请求参数示例
 
@@ -157,7 +157,7 @@ let sign = CryptoJS.SHA256(originString).toString();
   "orderId": "1231243324324234",
   "isContainFailed": true,
   "pageSize": 2,
-  "pageNumber": 1
+  "pageIndex": 1
 }
 ```
 
@@ -239,7 +239,7 @@ let sign = CryptoJS.SHA256(originString).toString();
 |» isAmountAboveZero|body|boolean| 否 | 是否金额>0|若该项为true，则只返回结算金额>0的结算单|
 |» payoutStatus|body|string| 否 | 付款状态|`NotPaid`: 未付款<br>`Paid`: 已付款|
 |» pageSize|body|integer| 是 | 页大小||
-|» pageNumber|body|integer| 是 | 页码||
+|» pageIndex|body|integer| 是 | 页码||
 
 > Body 请求参数示例
 
@@ -255,7 +255,7 @@ let sign = CryptoJS.SHA256(originString).toString();
   "isAmountAboveZero": true,
   "payoutStatus": "Paid",
   "pageSize": 2,
-  "pageNumber": 1
+  "pageIndex": 1
 }
 ```
 
